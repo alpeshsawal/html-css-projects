@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Poppins:wght@300;400;600;800&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0ece5;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  width: 100%;
+  height: 33%;
+  position: absolute;
+  background-color: #3081d0;
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+}
+
+.image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #3081d0;
+  margin: 15px;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.image .profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #fdfbf0;
+  object-fit: cover;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 3px;
+  padding: 2px;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 550;
+  padding: 3px;
+}
+
+.text-data .profession {
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.social-media-icons {
+  display: flex;
+  margin: 5px 3px;
+  padding: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-icons .link {
+  height: 25px;
+  width: 25px;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+.link > i {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 49%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+
+.buttons > button {
+  margin: 20px 10px;
+  padding: 3px;
+  width: 140px;
+  height: 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffff;
+  background-color: rgb(59, 131, 240);
+  border: none;
+}
+.buttons > button:hover {
+  cursor: pointer;
+  background-color: rgb(15, 91, 223);
+}
+.analytics {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.analytics .data {
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  color: rgb(54, 54, 54);
+  border-right: 2px solid rgb(63, 61, 61);
+}
+
+.data .i {
+  font-size: 18pxx;
+}
+
+.data:last-child {
+  border-right: none;
+}
